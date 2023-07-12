@@ -40,6 +40,10 @@ app.use((req, res, next) => {
 const  kashif = () => console.log("Kasif branch");
 kashif();
 
+// lastest branch commits
+const latest = () => console.log("latest");
+latest();
+
 const server = app.listen(process.env.PORT || '5000', () => debug(`Server running on port ${process.env.PORT || 5000}`));
 
 module.exports = server;
